@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link data-require="bootstrap-css@*" data-semver="3.3.1" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body ng-app="mainApp">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <span class="navbar-brand">Uthgard API</span>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Find Players</a></li>
+          <li><a href="toprvr.html">Top RvR</a></li>
+          <li><a href="toppve.html">Top PvE</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div style='height: 35px;' class='col-md-12'></div>
+
+
+
+  <div ng-controller="mainCtrl" class='col-md-12'>
+      <br />
+    <!-- Players -->
+    <div class='panel panel-default'>
+      <div class='panel-heading'>
+        Top Players - Realm vs Realm
+      </div>
+      <div id='players' class='panel-body panel-collapse '>
+
+
+        <div class='panel panel-default'>
+
+          <div class='panel-body' data-ng-init ="worker.getTopRvR()" >
+                <div ng-repeat='value in topRvR'>
+                   <div class='panel-body table-responsive'>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="row">
+                            <div class="col-md-1 text-right">
+                              {{$index + 1}}
+                            </div>
+                            <div class="col-md-1 text-right">
+                                <img ng-src="icons/{{value.Class}}.png" />
+                            </div>
+                            <div class="col-md-10">
+                               {{value.Name}}  <span ng-if="value.Guild"> &lt;{{value.Guild}}&gt; </span> <br /> 
+                               {{value.Level}} {{value.Race}} {{value.Class}} <br />
+                               <span ng-if="value.RealmRank">Realm Rank: {{value.RealmRank | formatRealmRank}}  <br /> </span> <span ng-if="value.Rp">Realm Points: {{value.Rp | number}} </span>
+                            </div>
+                         </div>
+                        </div>
+                      </div>
+                    </div>             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="factory.js"></script>
+  <script src="app.js"></script>
+</body>
+
+
+</html>

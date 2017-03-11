@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link data-require="bootstrap-css@*" data-semver="3.3.1" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body ng-app="mainApp">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <span class="navbar-brand">Uthgard API</span>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+         <li><a href="index.html">Find Players</a></li>
+          <li><a href="toprvr.html">Top RvR</a></li>
+          <li><a href="toppve.html">Top PvE</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div style='height: 35px;' class='col-md-12'></div>
+
+
+
+  <div ng-controller="mainCtrl" class='col-md-12'>
+      <br />
+    <!-- Players -->
+    <div class='panel panel-default'>
+      <div class='panel-heading'>
+        <a data-toggle="collapse" data-target="#players" href="">Find a Player</a>
+      </div>
+      <div id='players' class='panel-body panel-collapse '>
+
+
+        <div class='panel panel-default'>
+
+          <div class='panel-body'>
+
+            
+            <div class='spacer col-md-12'></div>
+            <div class='row col-md-12'>
+              <div class='col-md-1'>
+                <label for='playerName'>Name:</label>
+              </div>
+              <div class='col-md-2'>
+                <input type='text' class='form-control input-sm' id='playerName' name='playerName' ng-model='name' placeholder='Kejs' />
+              </div>
+            </div>
+            <div class='spacer col-md-12'></div>
+           
+            <div class='spacer col-md-12'></div>
+           
+            <div class='spacer col-md-12'></div>
+            <div class='row col-md-12'>
+              <div class='col-md-1'></div>
+              <div class='col-md-2 text-right'>
+                <button class='btn btn-default' ng-click='worker.getPlayer(name)'><span class='glyphicon glyphicon-search'></span> Search Players</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='panel panel-default'>
+          <div class='panel-heading'>
+            Results - Player
+          </div>
+          
+          <div class='panel-body table-responsive'>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="row">
+                  <div class="col-md-2">
+                      <img ng-src="icons/{{player.Class}}.png" />
+                  </div>
+                  <div class="col-md-10">
+                     {{player.Name}} <br />
+                      <span ng-if="player.Guild">Member of  &lt;{{player.Guild}}&gt;<br /></span>
+                     {{player.Level}} {{player.Race}} {{player.Class}} <br />
+                     <span ng-if="player.RealmRank">{{player.RealmRank | formatRealmRank}}</span>
+                  </div>
+               </div>
+              </div>
+            </div>
+          </div>
+          
+          
+            <div class="panel-body table-responsive">
+              <div class="row">
+                <div class="col-md-6">
+                   <span ng-if="player.Name">
+                     <table class='table table-striped'>
+                      <thead>
+                        <tr>
+                          <th colspan="2">Realm vs Realm Information</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Total Realm Points</td>
+                          <td>{{player.Rp | number}}</td>
+                        </tr>
+                         <tr>
+                          <td>Realm Points Earned Last Week</td>
+                          <td>Coming Soon?</td>
+                        </tr>
+                        <tr>
+                          <td>Total Deaths Last Week</td>
+                          <td>Coming Soon?</td>
+                        </tr>
+                         <tr>
+                          <td>I Remain Standing Score</td>
+                          <td>Coming Soon?</td>
+                        </tr>
+                      </tbody>
+                     </table>
+                   </span>
+                </div>
+                
+                
+                <div class="col-md-6">
+                   <span ng-if="player.Name">
+                     <table class='table table-striped'>
+                      <thead>
+                        <tr>
+                          <th colspan="2">Player vs Environment Information</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Total Experience</td>
+                          <td>{{player.Xp | number}}</td>
+                        </tr>
+                         <tr>
+                          <td>Experience Points Earned Last Week</td>
+                          <td>Coming Soon?</td>
+                        </tr>
+                        <tr>
+                          <td>Dragon Kills</td>
+                          <td>Coming Soon?</td>
+                        </tr>
+                      </tbody>
+                     </table>
+                   </span>
+                </div>
+              </div>
+            </div>
+
+        </div>
+        
+        
+        <div class='panel panel-default'>
+         <div class='panel-heading'>
+            Player History
+          </div>
+          <div class='panel-body'>
+            <div class="row">
+              <div class="col-md-3">
+                <div style="max-width: 400px; max-height: 400px;">
+                  <canvas id="expChart" width="400px" height="400px"></canvas>
+                </div>
+              </div>
+               <div class="col-md-3">
+                <div style="max-width: 400px; max-height: 400px;">
+                  <canvas id="rpChart" width="400px" height="400px"></canvas>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div style="max-width: 400px; max-height: 400px;">
+                 
+                </div>
+              </div>
+               <div class="col-md-3">
+                <div style="max-width: 400px; max-height: 400px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  <script src="factory.js"></script>
+  <script src="app.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,78 @@
+[05-Feb-2017 17:19:42 America/Chicago] PHP Warning:  file_get_contents(?player=kejs): failed to open stream: No such file or directory in /home4/kejek/public_html/uthgard/uthapi.php on line 18
+[05-Feb-2017 17:20:33 America/Chicago] PHP Warning:  file_get_contents(?player=kejs): failed to open stream: No such file or directory in /home4/kejek/public_html/uthgard/uthapi.php on line 18
+[05-Feb-2017 17:20:35 America/Chicago] PHP Warning:  file_get_contents(?player=kejs): failed to open stream: No such file or directory in /home4/kejek/public_html/uthgard/uthapi.php on line 18
+[05-Feb-2017 17:20:54 America/Chicago] PHP Warning:  file_get_contents(https://uthgard.org/herald/api/?player=kejs): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/kejek/public_html/uthgard/uthapi.php on line 18
+[05-Feb-2017 17:21:40 America/Chicago] PHP Warning:  file_get_contents(https://uthgard.org/herald/api/?): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/kejek/public_html/uthgard/uthapi.php on line 18
+[05-Feb-2017 17:21:55 America/Chicago] PHP Warning:  file_get_contents(https://uthgard.org/herald/api/?player=kejs): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/kejek/public_html/uthgard/uthapi.php on line 18
+[05-Feb-2017 17:22:29 America/Chicago] PHP Warning:  file_get_contents(https://uthgard.org/herald/api/player=kejs): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/kejek/public_html/uthgard/uthapi.php on line 18
+[05-Feb-2017 17:24:28 America/Chicago] PHP Warning:  file_get_contents(https://uthgard.org/herald/api/player%2F=kejs): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/kejek/public_html/uthgard/uthapi.php on line 18
+[05-Feb-2017 17:25:25 America/Chicago] PHP Warning:  file_get_contents(https://uthgard.org/herald/api/player%5C%2F=kejs): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/kejek/public_html/uthgard/uthapi.php on line 18
+[05-Feb-2017 17:26:49 America/Chicago] PHP Warning:  file_get_contents(https://uthgard.org/herald/api/player=kejs): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/kejek/public_html/uthgard/uthapi.php on line 18
+[05-Feb-2017 17:27:14 America/Chicago] PHP Warning:  file_get_contents(https://uthgard.org/herald/api/player121=kejs): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/kejek/public_html/uthgard/uthapi.php on line 18
+[05-Feb-2017 17:28:55 America/Chicago] PHP Warning:  file_get_contents(https://uthgard.org/herald/api/player121=kejs): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/kejek/public_html/uthgard/uthapi.php on line 15
+[05-Feb-2017 17:34:07 America/Chicago] PHP Warning:  file_get_contents(https://uthgard.org/herald/api/player/kejs): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/kejek/public_html/uthgard/uthapi.php on line 14
+[05-Feb-2017 17:34:15 America/Chicago] PHP Warning:  file_get_contents(https://uthgard.org/herald/api/player/kejs): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/kejek/public_html/uthgard/uthapi.php on line 14
+[05-Feb-2017 17:43:00 America/Chicago] PHP Warning:  file_get_contents(https://uthgard.org/herald/api/player/teets): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/kejek/public_html/uthgard/uthapi.php on line 14
+[05-Feb-2017 17:43:13 America/Chicago] PHP Warning:  file_get_contents(https://uthgard.org/herald/api/player/teets): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/kejek/public_html/uthgard/uthapi.php on line 14
+[05-Feb-2017 17:43:23 America/Chicago] PHP Warning:  file_get_contents(https://uthgard.org/herald/api/player/sersly): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/kejek/public_html/uthgard/uthapi.php on line 14
+[05-Feb-2017 22:22:16 America/Chicago] PHP Warning:  file_get_contents(https://uthgard.org/herald/api/player/Undefined): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/kejek/public_html/uthgard/uthapi.php on line 15
+[12-Feb-2017 14:19:51 America/Chicago] PHP Warning:  file_get_contents(https://uthgard.org/herald/api/player/Jjjlske): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/kejek/public_html/uthgard/uthapi.php on line 15
+[12-Feb-2017 14:30:38 America/Chicago] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home4/kejek/public_html/uthgard/uthapi.php on line 24
+[12-Feb-2017 14:32:44 America/Chicago] PHP Deprecated:  mysql_query(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home4/kejek/public_html/uthgard/uthapi.php on line 28
+[12-Feb-2017 14:32:44 America/Chicago] PHP Warning:  mysql_query(): Access denied for user 'root'@'localhost' (using password: NO) in /home4/kejek/public_html/uthgard/uthapi.php on line 28
+[12-Feb-2017 14:32:44 America/Chicago] PHP Warning:  mysql_query(): A link to the server could not be established in /home4/kejek/public_html/uthgard/uthapi.php on line 28
+[12-Feb-2017 14:37:00 America/Chicago] PHP Warning:  mysqli::query(): Empty query in /home4/kejek/public_html/uthgard/uthapi.php on line 28
+[12-Feb-2017 14:42:43 America/Chicago] PHP Parse error:  syntax error, unexpected 'is_array' (T_STRING), expecting '(' in /home4/kejek/public_html/uthgard/uthapi.php on line 22
+[12-Feb-2017 14:50:33 America/Chicago] PHP Fatal error:  Can't use method return value in write context in /home4/kejek/public_html/uthgard/uthapi.php on line 71
+[12-Feb-2017 14:50:55 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home4/kejek/public_html/uthgard/uthapi.php on line 75
+[12-Feb-2017 15:11:55 America/Chicago] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in /home4/kejek/public_html/uthgard/uthapi.php on line 95
+[12-Feb-2017 15:13:44 America/Chicago] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in /home4/kejek/public_html/uthgard/uthapi.php on line 95
+[12-Feb-2017 15:13:46 America/Chicago] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in /home4/kejek/public_html/uthgard/uthapi.php on line 95
+[12-Feb-2017 15:15:33 America/Chicago] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in /home4/kejek/public_html/uthgard/uthapi.php on line 95
+[12-Feb-2017 15:15:49 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home4/kejek/public_html/uthgard/uthapi.php on line 96
+[12-Feb-2017 15:36:24 America/Chicago] PHP Warning:  file_get_contents(https://uthgard.org/herald/api/player/Undefined): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/kejek/public_html/uthgard/uthapi.php on line 26
+[12-Feb-2017 15:36:24 America/Chicago] PHP Warning:  Variable passed to each() is not an array or object in /home4/kejek/public_html/uthgard/uthapi.php on line 32
+[13-Feb-2017 22:21:07 America/Chicago] PHP Warning:  file_get_contents(https://uthgard.org/herald/api/player/Kej): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/kejek/public_html/uthgard/uthapi.php on line 26
+[13-Feb-2017 22:21:07 America/Chicago] PHP Warning:  Variable passed to each() is not an array or object in /home4/kejek/public_html/uthgard/uthapi.php on line 32
+[13-Feb-2017 22:21:09 America/Chicago] PHP Warning:  file_get_contents(https://uthgard.org/herald/api/player/Kej): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/kejek/public_html/uthgard/uthapi.php on line 26
+[13-Feb-2017 22:21:09 America/Chicago] PHP Warning:  Variable passed to each() is not an array or object in /home4/kejek/public_html/uthgard/uthapi.php on line 32
+[13-Feb-2017 22:21:19 America/Chicago] PHP Warning:  file_get_contents(https://uthgard.org/herald/api/player/Kej): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/kejek/public_html/uthgard/uthapi.php on line 26
+[13-Feb-2017 22:21:19 America/Chicago] PHP Warning:  Variable passed to each() is not an array or object in /home4/kejek/public_html/uthgard/uthapi.php on line 32
+[13-Feb-2017 22:22:09 America/Chicago] PHP Warning:  file_get_contents(https://uthgard.org/herald/api/player/Kej): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/kejek/public_html/uthgard/uthapi.php on line 26
+[13-Feb-2017 22:22:09 America/Chicago] PHP Warning:  Variable passed to each() is not an array or object in /home4/kejek/public_html/uthgard/uthapi.php on line 32
+[13-Feb-2017 22:22:18 America/Chicago] PHP Warning:  file_get_contents(https://uthgard.org/herald/api/player/Jek): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/kejek/public_html/uthgard/uthapi.php on line 26
+[13-Feb-2017 22:22:18 America/Chicago] PHP Warning:  Variable passed to each() is not an array or object in /home4/kejek/public_html/uthgard/uthapi.php on line 32
+[14-Feb-2017 20:22:48 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home4/kejek/public_html/uthgard/uthapi.php on line 113
+[14-Feb-2017 20:23:12 America/Chicago] PHP Warning:  file_get_contents(https://uthgard.org/herald/api/top/Rvr): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/kejek/public_html/uthgard/uthapi.php on line 119
+[14-Feb-2017 21:26:13 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home4/kejek/public_html/uthgard/uthapi.php on line 98
+[14-Feb-2017 21:26:21 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home4/kejek/public_html/uthgard/uthapi.php on line 98
+[14-Feb-2017 21:26:40 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home4/kejek/public_html/uthgard/uthapi.php on line 98
+[14-Feb-2017 21:31:36 America/Chicago] PHP Warning:  array_reverse() expects parameter 1 to be array, string given in /home4/kejek/public_html/uthgard/uthapi.php on line 102
+[14-Feb-2017 21:39:07 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home4/kejek/public_html/uthgard/uthapi.php on line 169
+[25-Feb-2017 20:45:30 America/Chicago] PHP Warning:  Variable passed to each() is not an array or object in /home4/kejek/public_html/uthgard/uthapi.php on line 32
+[25-Feb-2017 20:45:59 America/Chicago] PHP Warning:  Variable passed to each() is not an array or object in /home4/kejek/public_html/uthgard/uthapi.php on line 121
+[25-Feb-2017 20:46:01 America/Chicago] PHP Warning:  Variable passed to each() is not an array or object in /home4/kejek/public_html/uthgard/uthapi.php on line 121
+[25-Feb-2017 20:46:05 America/Chicago] PHP Warning:  Variable passed to each() is not an array or object in /home4/kejek/public_html/uthgard/uthapi.php on line 121
